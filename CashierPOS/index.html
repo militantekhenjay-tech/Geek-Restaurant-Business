@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>TOKYO BYTES</h1>
+</header>
+
+<main>
+  <section class="menu">
+    <h2>Menu</h2>
+    <div id="menu" class="grid"></div>
+  </section>
+
+  <div class="side">
+    <section class="ticket">
+      <h2>New order</h2>
+      <div class="quick">
+        <input id="code" placeholder="Item code, e.g. M001" autocomplete="off">
+        <button id="addcode" type="button">Add</button>
+      </div>
+      <p class="hint">Type the code, then the choices: D001 M (size), M001 spicy, DS003 fried strawberry</p>
+      <ul id="cart"></ul>
+      <div class="total"><span>Total</span><strong id="total">₱0</strong></div>
+      <div class="actions">
+        <button id="clear" type="button">Clear</button>
+        <button id="place" type="button" class="primary">Place order</button>
+      </div>
+      <p id="orderMsg" class="note"></p>
+    </section>
+
+    <section class="payment">
+      <h2>Take payment</h2>
+      <div class="find">
+        <input id="no" placeholder="Order no. (A1001) or item code (M001)" autocomplete="off">
+        <button id="find" type="button">Find order</button>
+      </div>
+      <div id="results" class="results"></div>
+      <div id="details" class="details"></div>
+      <button id="pay" type="button" class="primary">Record payment</button>
+      <p id="msg" class="note"></p>
+      <div id="receipt" class="receipt" hidden></div>
+    </section>
+  </div>
+
+  <section class="history">
+    <div class="history-head">
+      <h2>Order history</h2>
+      <div id="filters" class="filters">
+        <button type="button" data-f="ALL" class="on">All</button>
+        <button type="button" data-f="PENDING">Pending</button>
+        <button type="button" data-f="PAID">Paid</button>
+      </div>
+    </div>
+    <div id="history" class="history-list"></div>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

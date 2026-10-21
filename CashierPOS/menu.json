@@ -1,0 +1,40 @@
+[
+  { "id": "M001", "category": "Main Dishes", "name": "Katsu Curry", "price": 479,
+    "options": [
+      { "key": "sauce", "label": "Sauce", "suffix": "sauce", "required": false,
+        "choices": [ { "label": "Normal", "price": 10 }, { "label": "Spicy", "price": 10 } ] }
+    ] },
+  { "id": "M002", "category": "Main Dishes", "name": "Shoyu Ramen", "price": 549 },
+  { "id": "M003", "category": "Main Dishes", "name": "Sushi Rolls", "price": 249 },
+  { "id": "M004", "category": "Main Dishes", "name": "Takoyaki (6 pcs)", "price": 229 },
+
+  { "id": "D001", "category": "Drinks", "name": "Matcha", "variants": [
+      { "label": "Small", "price": 50 },
+      { "label": "Medium", "price": 100 },
+      { "label": "Large", "price": 150 }
+  ] },
+  { "id": "D002", "category": "Drinks", "name": "Soda", "variants": [
+      { "label": "Small", "price": 50 },
+      { "label": "Medium", "price": 100 },
+      { "label": "Large", "price": 150 }
+  ] },
+  { "id": "D003", "category": "Drinks", "name": "Milk", "variants": [
+      { "label": "Small", "price": 40 },
+      { "label": "Medium", "price": 80 },
+      { "label": "Large", "price": 120 }
+  ] },
+
+  { "id": "DS001", "category": "Desserts", "name": "Dango", "price": 149 },
+  { "id": "DS002", "category": "Desserts", "name": "Pudding", "price": 149 },
+  { "id": "DS003", "category": "Desserts", "name": "Sandos Sandwich", "price": 149,
+    "options": [
+      { "key": "style", "label": "Style", "suffix": "", "required": true,
+        "choices": [ { "label": "Fried", "price": 0 }, { "label": "Not fried", "price": 0 } ] },
+      { "key": "flavor", "label": "Flavor", "suffix": "flavor", "required": false,
+        "choices": [
+          { "label": "Strawberry", "price": 10 },
+          { "label": "Dubai Chocolate", "price": 10 },
+          { "label": "Creme Brulee", "price": 10 }
+        ] }
+    ] }
+]
